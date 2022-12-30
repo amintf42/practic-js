@@ -1,0 +1,31 @@
+main{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+main img {
+    width: 500px;
+    border-radius: 2rem;
+    
+}
+section.thumbs{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+}
+section.thumbs img {
+    width: 230px;
+    border-radius: 1rem;
+}
+body{
+    /* background-color: gray; */
+}
+.border{
+    border:  2px solid gray;
+    border-radius: 1rem;
+}
