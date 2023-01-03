@@ -9,22 +9,27 @@ let = index = 0;
 // function
 function addstudent() {
     let inputvalue = input.value;
-    let li = document.createElement("li");
-    let deletebtn = document.createElement("button");
-    deletebtn.addEventListener("click", removeStudent);
-    deletebtn.textContent = "Delete";
-    let text = document.createTextNode(inputvalue);
-    li.appendChild(text);
-    li.appendChild(deletebtn);
-    ul.appendChild(li);
-    input.value = "";
-    input.focus();
-    index++;
-    span.textContent = index;
+    if (inputvalue) {
+        input.classList.remove()
+        let li = document.createElement("li");
+        let deletebtn = document.createElement("button");
+        deletebtn.addEventListener("click", removeStudent);
+        deletebtn.textContent = "Delete";
+        let text = document.createTextNode(inputvalue);
+        li.appendChild(text);
+        li.appendChild(deletebtn);
+        ul.appendChild(li);
+        input.value = "";
+        input.focus();
+        index++;
+        span.textContent = index;
+    } else {
+        input.classList.add("err");
+    }
 }
 
-function showChar(e){
-    if(e.which === 13){
+function showChar(e) {
+    if (e.which === 13) {
         addstudent();
     }
 }
@@ -40,4 +45,4 @@ function removeStudent() {
 
 // event
 btn.addEventListener("click", addstudent);
-input.addEventListener("keypress" , showChar)
+input.addEventListener("keypress", showChar)
