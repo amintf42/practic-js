@@ -45,4 +45,4 @@ function removeStudent() {
 
 // event
 btn.addEventListener("click", addstudent);
-input.addEventListener("keypress", showChar)
+input.addEventListener("keypress", showChar);
