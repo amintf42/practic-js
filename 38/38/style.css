@@ -1,0 +1,14 @@
+body{
+    margin: 0 ;
+    padding: 0;
+    height: 100vh;
+}
+input{
+    width: 250px;
+}
+form{
+    margin: 2rem;
+}
+.err{
+    color: red;
+}
