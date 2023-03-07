@@ -1,0 +1,8 @@
+
+.done {
+    background: lightgreen !important;
+}
+
+.uncompleted {
+    background: lightcoral !important;
+}
